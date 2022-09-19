@@ -1,0 +1,425 @@
+.contacts {
+  padding: 55px 0px;
+}
+
+.contacts__title {
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.5px;
+  max-width: 1100px;
+  color: #000000;
+}
+
+.contacts__title span {
+  padding-left: 279px;
+  padding-right: 340px;
+}
+
+.contacts__body {
+  display: flex;
+  margin-top: 33px;
+  margin-left: -15px;
+}
+
+.contacts__body_items {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 15px;
+}
+
+.items__info {
+  max-width: 275px;
+  margin-left: 15px;
+}
+
+.info__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.info__address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  max-width: 235px;
+}
+
+.info__email {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 13px;
+}
+
+.info__tel {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.info__tel span {
+  font-weight: 700;
+}
+
+.info__icons {
+  display: flex;
+}
+
+.info__icons a {
+  text-decoration: none;
+}
+
+.icons__viber {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.icons__viber::before {
+  content: "";
+  background-image: url(../img/icons/viber.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 13px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.icons__viber::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #000000;
+  margin-left: 5px;
+  margin-right: 4px;
+}
+
+.icons__telegram {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.icons__telegram::before {
+  content: "";
+  background-image: url(../img/icons/telegram.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 14px;
+  height: 11px;
+  margin-right: 4px;
+}
+
+.icons__telegram::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #000000;
+  margin-left: 5px;
+  margin-right: 4px;
+}
+
+.icons__whatsapp {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.icons__whatsapp::before {
+  content: "";
+  background-image: url(../img/icons/whatsapp.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1160px) {
+  .contacts__title span {
+    padding: 0px;
+  }
+  .contacts__body {
+    flex-direction: column;
+  }
+  .contacts__body_items {
+    justify-content: center;
+  }
+  .contacts__body_items:last-child {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .contacts__title {
+    font-weight: 100;
+    font-size: 33px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #000000;
+  }
+  .contacts__body_items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .items__img {
+    order: 2;
+    margin-top: 15px;
+  }
+  .items__info {
+    order: 1;
+    margin-left: 0px;
+  }
+}
+.application {
+  background-color: #F9F9F9;
+  padding: 47px 0px 59px;
+}
+
+.application__body {
+  display: flex;
+}
+
+.application__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  max-width: 543px;
+}
+
+.application__items {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 544px;
+}
+
+.application__items input {
+  width: 47%;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-bottom: 7px;
+}
+
+.application__button {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #121212;
+  border-radius: 2px;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+@media (max-width: 984px) {
+  .application__items input {
+    width: 80%;
+    margin-left: 0px;
+  }
+  .application__button {
+    width: 50%;
+    margin-left: 0px;
+  }
+  .application__text {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .application__body {
+    flex-direction: column;
+  }
+  .application__text {
+    margin-bottom: 20px;
+  }
+  .application__items input {
+    width: 100%;
+  }
+}
+.wizart {
+  display: block;
+  position: relative;
+  padding: 57px 0px 52px 0px;
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.wizart__burger-img {
+  display: none;
+}
+
+.container {
+  max-width: 1380px;
+  margin: auto;
+}
+
+.wizart__contacts-block {
+  width: 264px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 22px;
+}
+
+.wizart__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.wizart__contacts-block:not(:last-child) {
+  margin-right: 15px;
+}
+
+.wizart__telefhone {
+  display: block;
+  margin-top: 13px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.wizart__telefhone span {
+  font-weight: bold;
+}
+
+.viber,
+.telegram,
+.whats-app {
+  display: inline-block;
+}
+
+.viber {
+  padding: 0px 2px 0px 15px;
+  background-image: url(../img/viber.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.telegram {
+  padding: 0px 2px 0px 15px;
+  background-image: url(../img/telegram.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.whats-app {
+  padding: 0px 2px 0px 15px;
+  background-image: url(../img/wats-app.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.wizart__social p:not(:last-child) {
+  border-right: white 1px solid;
+}
+
+.wizart__logo {
+  position: absolute;
+  left: 30px;
+  top: 35px;
+}
+
+.social-image {
+  margin-bottom: 84px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+  .wizart__logo {
+    display: none;
+  }
+  .social-image {
+    display: none;
+  }
+  .wizart__burger-img {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .wizart__wrapper {
+    justify-content: flex-start;
+  }
+  .wizart__logo-burger {
+    margin-right: 540px;
+  }
+}
+@media (max-width: 900px) {
+  .wizart__burger-img {
+    justify-content: space-between;
+  }
+  .wizart__wrapper {
+    flex-wrap: wrap;
+  }
+  .wizart__logo-burger {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 865px) {
+  .wizart__contacts-block {
+    margin-top: 15px;
+  }
+  .vanishing {
+    display: none;
+  }
+  h3 {
+    font-weight: 600;
+    margin-top: 0px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .wizart__contacts-block {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .wizart__telefhone span {
+    font-weight: normal;
+  }
+  footer {
+    padding: 30px 0px;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    padding: 25px 0px 62px 0px;
+  }
+  .wizart__contacts-block {
+    width: 100%;
+  }
+}

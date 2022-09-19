@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<title>Wizart</title>
+</head>
+
+<body>
+	<header>
+		<div class="container header-wrapper">
+			<div class="header__logo">
+				<a href="#"><img src="./img/header-logo.png" alt=""></a>
+			</div>
+			<img class="mobile-menu-buttom" src="./img/mobile-buttom.svg" alt="mobile menu">
+			<div class="header__nav">
+				<nav>
+					<ul>
+						<li><a class="link" href="#">ПОРТФОЛІО</a></li>
+						<li><a class="link " href="#">АГЕНТСТВО</a></li>
+						<li><a class="link" href="#">СТАТТІ</a></li>
+						<li><a class="link" href="./contacts.html">КОНТАКТИ</a></li>
+						<li><a class="link" href="#">ENG</a></li>
+						<li class="header__icons">
+							<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+									class="bi bi-facebook" viewBox="0 0 16 16">
+									<path
+										d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+								</svg></a>
+							<a href="#">
+								<div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+										<path
+											d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+									</svg></div>
+							</a>
+							<a href="#">
+								<div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										fill="black" class="bi bi-behance" viewBox="0 0 16 16">
+										<path
+											d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" />
+									</svg>
+								</div>
+							</a>
+							<a href="#">
+								<div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										fill="black" class="bi bi-youtube" viewBox="0 0 16 16">
+										<path
+											d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+									</svg></div>
+							</a>
+						</li>
+					</ul>
+
+				</nav>
+				<div class="header__burger">
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+
+		<section class="wizart-description">
+			<div class="wizart-description__backColor"></div>
+			<div class="container">
+
+				<img class="wizart-description__image" src="./img/wizart-title.jpg" alt="wizart-title">
+
+				<div class="wizart-description__text">
+					<p class="wizart-description__text_sub-title">Брендинг та ребрендинг</p>
+					<h1 class="wizart-description__text_title">стоматологічних клінік і центрів</h1>
+					<p class="wizart-description__text_firstInfo">Агентство Wizart має багатий досвід у розробці
+						брендингових концепцій для стоматологічних клінік, медичних закладів та організацій.
+						Співпрацюючи із стоматологіями, ми об’єднуємося в одну команду та реалізовуємо спільну мету –
+						аби споживач був задоволений, а бізнес наших замовників розвивався.</p>
+					<p class="wizart-description__text_secondInfo">Із 2016 року нашим агенством було створено більше 10
+						брендингових проєктів для стоматологічних та медичних організацій. У нашому портфоліо: <br />
+					</p>
+					– стоматологічні кабінети та клініки;<br />
+					– стоматологічні центри;<br />
+					– косметологічні клініки;<br />
+					– компанії-дистриб’ютори зубних імплантатів та мед. обладнання;<br />
+					– асоціація стоматологів та ортопедів України.</p>
+				</div>
+			</div>
+		</section>
+		<section class="ourCompetence">
+			<div class="container">
+				<h2 class="ourCompetence__title">наша компетенція:</h2>
+				<div class="ourCompetence__body">
+					<div class="body__item">
+						<p class="item__title">Розуміємося на ринку стоматологічних послуг України</p>
+						<img src="./img/day2_192 1.jpg" alt="" class="item__img">
+						<p class="item__text">Фахівці команди Wizart неодноразово здійснювали дослідження й аналіз
+							стоматологічного ринку. Ми розуміємо головні тренди і тенденції розвитку галузі.</p>
+
+					</div>
+					<div class="body__item">
+						<p class="item__title">Ознайомлені із кращими світовими практиками стоматологічної сфери</p>
+						<img src="./img/kongress-3 2.jpg" alt="" class="item__img">
+						<p class="item__text">Під час досліджень ринку України ми ознайомилися із кращими світовими
+							практиками, топовими брендами і персонами у стоматологічній сфері.</p>
+
+					</div>
+					<div class="body__item">
+						<p class="item__title">Знаємо провідні компанії України у галузі стоматології </p>
+						<img src="./img/DSCF0774 1.jpg" alt="" class="item__img">
+						<p class="item__text">Дистриб’ютори стоматологічного обладнання, зубних імплантатів,
+							стоматологічні клініки і центри – нам знайомі провідні компанії у галузі стоматології. </p>
+
+					</div>
+					<div class="body__item">
+						<p class="item__title">Орієнтуємося у моделях споживання стоматологічних послуг</p>
+						<img src="./img/sirona-primescan-5 1.jpg" alt="" class="item__img">
+						<p class="item__text">Ми добре розуміємо потреби споживачів у кожному стоматологічному напрямку:
+							імплантація, ортодонтія, ортопедія, терапія, ендодонтія, хірургія тощо.</p>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<div class="projectExamples">
+			<div class="container">
+				<p>приклади здійснених проєктів:</p>
+			</div>
+		</div>
+		<section class="kalenchuk">
+			<div class="kalenchuk__container">
+				<div class="kalenchuk__informatio-wrapper">
+					<div class="kalenchuk__name-block">
+						<p class="kalenchuk__name-block-text">Ребрендинг <br> стоматологічного центру
+						</p>
+						<h2 class="kalenchuk__name-block-title">Kalenchuk Clinic </h2>
+					</div>
+					<div class="kalenchuk__text-block">
+						<div class="kalenchuk__text-block-info">
+							<h3>BACKGROUND:</h3>
+							<p>Kalenchuk Clinic є найбільшим стоматологічним центрому місті Чернівці. Капітальний
+								апгрейд
+								матеріально-технічної бази та можливість надання послуг на найвищому технологічному
+								рівні посприяли
+								необхідності оновлення комунікацій клініки. </p>
+						</div>
+						<div class="kalenchuk__text-block-info">
+							<h3>CREATIVE IDEA:</h3>
+							<p>В оновленій концепції ми передали спрямованість компанії на технологічність і новації,
+								але при
+								цьому зберегли вишуканий, інтелігентний характер і переваги Kalenchuk Clinic – досвід і
+								майстерність найталановитіших лікарів міста. Ми розробили сучасний, стильний, елегантний
+								дизайн, що
+								якнайкраще транслює сутність компанії: Kalenchuk Clinic – бренд бездоганної усмішки.</p>
+						</div>
+						<div class="kalenchuk__text-block-info">
+							<h3>RESULTS:</h3>
+							<p>Ребрендинг посприяв успішній рекламній кампанії в торгових центрах міста та соціальних
+								мережах.
+								Аудиторія клініки позитивно оцінила всі оновлення центру. І, незважаючи на карантинні
+								обмеження,
+								клініці вдалося збільшити щоденне навантаження. </p>
+						</div>
+					</div>
+				</div>
+				<div class="kalenchuk__grid-wrapper">
+					<div class="kalenchuk__grid-block">
+						<div class="grid-elem first"><img src="./img/kalenchuk/kalenchuk-foto-first.jpg" alt="first">
+						</div>
+						<div class="grid-elem second"><img src="./img/kalenchuk/kalenchuk-foto-second.jpg" alt="second">
+						</div>
+						<div class="grid-elem third"><img src="./img/kalenchuk/kalenchuk-foto-third.jpg" alt="third">
+						</div>
+						<div class="grid-elem fourth"><img src="./img/kalenchuk/kalenchuk-foto-fourth.jpg" alt="fourth">
+						</div>
+						<div class="grid-elem fifth"><img src="./img/kalenchuk/kalenchuk-foto-fifth.jpg" alt="fifth">
+						</div>
+					</div>
+				</div>
+				<div class="kalenchuk__text-block-info-burger">
+					<h3>RESULTS:</h3>
+					<p>Ребрендинг посприяв успішній рекламній кампанії в торгових центрах міста та соціальних мережах.
+						Аудиторія клініки позитивно оцінила всі оновлення центру. І, незважаючи на карантинні обмеження,
+						клініці вдалося збільшити щоденне навантаження.</p>
+				</div>
+				<div class="kalenchuk__video-block">
+					<div class="kalenchuk__vidio-block-title">
+						<h3>відеокейс:</h3>
+					</div>
+					<div class="kalenchuk__video">
+						<video class="kalenchuk-clinic-video" controls poster="./img/screen-video.jpg"
+							src="https://ucarecdn.com/0c6e77c0-60d5-4bf1-98ff-7d06f93e252b/"></video>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section class="loadent">
+			<div class="loadent__container">
+				<div class="loadent__informatio-wrapper">
+					<div class="loadent__name-block">
+						<p class="loadent__name-block-text">Ребрендинг <br> стоматологічної клініки
+						</p>
+						<h2 class="loadent__name-block-title">LAODENT</h2>
+					</div>
+					<div class="loadent__text-block">
+						<div class="loadent__text-block-info">
+							<h3>BACKGROUND:</h3>
+							<p>LAODENT – це клініка, де стоматологи максимально намагаються зберегти кожен зуб та
+								відновити його
+								функції й естетику. Лікарі LAODENT впевнені, що високих результатів можна досягнути і з
+								мінімальною
+								інвазивністю. Розкрити принципи роботи клініки у візуальній та вербальній айдентиці –
+								саме таке
+								завдання постало перед проєктною командою агентства Wizart. </p>
+						</div>
+						<div class="loadent__text-block-info">
+							<h3>CREATIVE IDEA:</h3>
+							<p>На основі здійснених досліджень та здобутих висновків ми запропонували замовникам
+								концепцію
+								“лагідної стоматології” – клініки, яка турбується про природню красу та здоров’я кожного
+								клієнта.
+								Саме збереження подарованого природою стало основою для створення візуальних та
+								вербальних
+								комунікацій бренду.</p>
+						</div>
+						<div class="loadent__text-block-info">
+							<h3>RESULTS:</h3>
+							<p>Оновлення допомогло клініці обрати напрямок для маркетингових активностей, стати
+								впізнаваною для
+								клієнтів, а працівникам відчути себе більш впевнено. Стоматологія LAODENT максимально
+								впровадила
+								брендингову концепцію. </p>
+						</div>
+					</div>
+				</div>
+				<div class="loadent__grid-wrapper">
+					<div class="loadent__grid-block">
+						<div class="grid-elem team"><img src="./img/loadent/team.jpg" alt="team"></div>
+						<div class="grid-elem doktor"><img src="./img/loadent/doktor.jpg" alt="doktor"></div>
+						<div class="grid-elem cience"><img src="./img/loadent/sience.jpg" alt="sience"></div>
+						<div class="grid-elem room"><img src="./img/loadent/room.jpg" alt="room"></div>
+						<div class="grid-elem a-patient"><img src="./img/loadent/a-patient.jpg" alt="a-patient"></div>
+					</div>
+				</div>
+				<div class="loadent__text-block-info-burger">
+					<h3>RESULTS:</h3>
+					<p>Оновлення допомогло клініці обрати напрямок для маркетингових активностей, стати впізнаваною для
+						клієнтів, а працівникам відчути себе більш впевнено. Стоматологія LAODENT максимально впровадила
+						брендингову концепцію.</p>
+				</div>
+				<div class="loadent__video-block">
+					<div class="loadent__vidio-block-title">
+						<h3>відеокейс:</h3>
+					</div>
+					<div class="loadent__video">
+						<video class="case-studio-video" controls
+							src="https://ucarecdn.com/3020f99e-34a4-43f7-a2c3-67155d35b82d/"></video>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section class="udou">
+			<div class="udou__container">
+				<div class="udou__informatio-wrapper">
+					<div class="udou__name-block">
+						<p class="udou__name-block-text">Ребрендинг об’єднання стоматологів-ортопедів і зубних техників
+							України
+						</p>
+						<h2 class="udou__name-block-title">UDOU</h2>
+					</div>
+					<div class="udou__text-block">
+						<div class="udou__text-block-info">
+							<h3>BACKGROUND:</h3>
+							<p>До нас звернулося керівництво Об’єднання стоматологів-ортопедів України із завданням
+								здійснити
+								ребрендинг та оновити комунікації, які мали б наповну транслювати спрямування на новації
+								та
+								технологічність в ортопедичній сфері стоматології. Активність та прогресивність
+								представників
+								організації надихнула нас на створення надсучасної айдентики та креативних слоганів.
+							</p>
+						</div>
+						<div class="udou__text-block-info">
+							<h3>CREATIVE IDEA:</h3>
+							<p>Головними образами під час створення брендингового проєкту стали “UNION – об’єднання,
+								синергія
+								знань та досвіду”, “UNIVERSE – всесвіт можливостей сучасної стоматології” та “UKRAINE –
+								сприяння
+								стоматологічному туризму”. Ми розробили концепцію, яка відтворює ідею “Майбутнє вже
+								зараз”, і
+								створили виразні комунікації у цифровій космічній стилістиці.</p>
+						</div>
+						<div class="udou__text-block-info">
+							<h3>RESULTS:</h3>
+							<p>Завдяки брендингу Об’єднанню стоматологів-ортопедів України вдалося привернути увагу до
+								своєї
+								організації прогресивних молодих стоматологів, а також досвідчених спікерів. UDOU
+								успішно
+								демонструє свою філософію на різноманітних зібраннях та конференціях, надихаючи своїх
+								колег та
+								спонукаючи до обміну знаннями та досвідом.</p>
+						</div>
+					</div>
+				</div>
+				<div class="udou__grid-wrapper">
+					<div class="udou__grid-block">
+						<div class="grid-elem cities"><img src="./img/img-cities.jpg" alt="sities"></div>
+						<div class="grid-elem flag"><img src="./img/img-flag.jpg" alt="flag"></div>
+						<div class="grid-elem rack"><img src="./img/img-rack.jpg" alt="rack"></div>
+						<div class="grid-elem tablets"><img src="./img/img-tablets.jpg" alt="tablets"></div>
+						<div class="grid-elem cofee"><img src="./img/img-cofee.jpg" alt="cofee"></div>
+					</div>
+				</div>
+				<div class="udou__text-block-info-burger">
+					<h3>RESULTS:</h3>
+					<p>Завдяки брендингу Об’єднанню стоматологів-ортопедів України вдалося привернути увагу до своєї
+						організації прогресивних молодих стоматологів, а також досвідчених спікерів. UDOU успішно
+						демонструє свою філософію на різноманітних зібраннях та конференціях, надихаючи своїх колег та
+						спонукаючи до обміну знаннями та досвідом.</p>
+				</div>
+				<div class="udou__video-block">
+					<div class="udou__vidio-block-title">
+						<h3>відеокейс:</h3>
+					</div>
+					<div class="udou__video">
+						<video class="uneverse-video" controls
+							src="https://ucarecdn.com/724c60ae-83fb-4cc7-b138-45bfc8a7600e/unionuniverseukraine.mp4"></video>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="reviews__container">
+				<h2 class="reviews__title">відеовідгуки наших клієнтів:</h2>
+				<div class="reviews__kolenchuk-comment">
+					<div class="info-block">
+						<div class="video">
+							<video controls src="./video/kalenchuk.mp4.mp4"></video>
+						</div>
+						<div class="text-wrapper">
+							<div class="images-quotetions">
+								<img src="./img/quotation-mark.svg" alt="quotation">
+							</div>
+							<div class="text-wrapper__content">
+								<div class="comment">
+									<p>Агенція Wizart глибоко відчула нашу потребу і чітко реалізувала її у
+										брендинговому
+										проєкті
+										на
+										всі
+										100%</p>
+								</div>
+								<div class="doctor-name">
+									<p> <span>Віктор Васильович Каленчук,</span> <br> керівник стоматологічного центру
+										Каленчук
+										Клінік
+									</p>
+								</div>
+							</div>
+							<div class="images-quotetions-reverse">
+								<img src="./img/quotation-mark1.svg" alt="quotetion">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__grizodub-comment">
+					<div class="info-block">
+						<div class="video">
+							<video controls src="./video/grizodub.mp4.mp4"></video>
+						</div>
+						<div class="text-wrapper">
+							<div class="images-quotetions">
+								<img src="./img/quotation-mark.svg" alt="quotation">
+							</div>
+							<div class="text-wrapper__content">
+								<div class="comment">
+									<p>“Ми, звісно ж, будемо рекомендувати агентство Wizart своїм колегам, тому що ви
+										круті. Ви
+										допомогли нам стати кращими і більш зрозумілими для оточуючих”
+									</p>
+								</div>
+								<div class="doctor-name">
+									<p> <span>Євген Васильович Гризодуб,</span> <br> президент Об'єднання
+										стоматологів-ортопедів
+										України
+									</p>
+								</div>
+							</div>
+							<div class="images-quotetions-reverse">
+								<img src="./img/quotation-mark1.svg" alt="quotetion">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__lavruschak-comment">
+					<div class="info-block">
+						<div class="images-doktor">
+							<img class="dok-foto" src="./img/doktor-lavroschuk.jpg" alt="doktor">
+						</div>
+						<div class="text-wrapper">
+							<div class="images-quotetions">
+								<img class="tabu" src="./img/quotation-mark.svg" alt="quotation">
+							</div>
+							<div class="text-wrapper__content">
+								<div class="comment">
+									<p>“Я був вражений результатом:“Вау, невже такий вигляд матиме наша стоматологія”. з
+										часом
+										меніце рішення подобається все більше”
+									</p>
+								</div>
+								<div class="doctor-name">
+									<p> <span>Андрій Онуфрієвич Лаврущак,</span> <br> керівник стоматології LAODENT
+									</p>
+								</div>
+							</div>
+							<div class="images-quotetions-reverse">
+								<img src="./img/quotation-mark1.svg" alt="quotetion">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="workflow">
+			<div class="container">
+				<img class="workflow__image" src="./img/workflow.jpg" alt="workflow">
+				<h2 class="workflow__title">Як відбувається робочий процес:</h2>
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="first-row">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+									aria-controls="panelsStayOpen-collapseOne">
+									<span>01</span>Знайомство
+
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+								aria-labelledby="panelsStayOpen-headingOne">
+								<div class="accordion-body">
+									Насамперед ми організовуємо зустріч із ключовими представниками стоматологічної
+									компанії
+									і
+									проводимо брифінг, під час якого ознайомлюємося зі специфікою роботи стоматології,
+									її
+									потребами і можливостями.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+									aria-controls="panelsStayOpen-collapseTwo">
+									<span>02</span>Дослідження
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+								aria-labelledby="panelsStayOpen-headingTwo">
+								<div class="accordion-body">
+									На цьому етапі ми досліджуємо стоматологічний ринок, конкурентне середовище, цільову
+									аудиторію стоматологій і формуємо висновки; по завершенню узгоджуємо напрацювання із
+									замовником.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+									aria-controls="panelsStayOpen-collapseThree">
+									<span>03</span>Стратегія
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+								aria-labelledby="panelsStayOpen-headingThree">
+								<div class="accordion-body">
+									Далі ми працюємо над стратегічною платформою бренду компанії: формулюємо гіпотезу
+									позиціонування, місію, бачення майбутнього, цінності, характер бренду; домовляємося
+									із
+									замовником про зустріч, аби презентувати і узгодити платформу бренду.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="second-row">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+									aria-controls="panelsStayOpen-collapseFour">
+									<span>04</span>вербальний Інтерфейс
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+								aria-labelledby="panelsStayOpen-headingFour">
+								<div class="accordion-body">
+									Після узгодження розпочинаємо роботу над вербальними комунікаціями; Ми розробляємо
+									назву
+									(за
+									потреби), ключові меседжі компанії, повідомлення та слогани.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+									aria-controls="panelsStayOpen-collapseFive">
+									<span>05</span>візуальний Інтерфейс
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+								aria-labelledby="panelsStayOpen-headingFive">
+								<div class="accordion-body">
+									Розробивши вербальні, ми створюємо візуальні комунікації - систему дизайну
+									майбутнього
+									бренду: логотип, шрифти, кольори, фірмова графіка, носії фірмового стилю, які
+									зможуть
+									продемонструвати, як бренд буде існувати/функціонувати надалі.
+
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingSix">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+									aria-controls="panelsStayOpen-collapseSix">
+									<span>06</span>фіналізація проєкту
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+								aria-labelledby="panelsStayOpen-headingSix">
+								<div class="accordion-body">
+									фіксуємо здійснену роботу у брендбуці, де детально описуємо концепцію і правила
+									брендування
+									носіїв фірмового стилю, стратегію та платформу бренду тощо.
+
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+									aria-controls="panelsStayOpen-collapseSeven">
+									<span>07</span>Впровадження
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+								aria-labelledby="panelsStayOpen-headingSeven">
+								<div class="accordion-body">
+									Фінальний етап брендингового проєкту - допомога із впровадженням: підготовка
+									додаткових
+									носіїв фірмового стилю, робота з підрядниками, контроль всіх процесів та
+									консультації.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="application">
+			<div class="container">
+				<h2 class="application__title">ЗАМОВИТИ КОНСУЛЬТАЦІЮ:</h2>
+				<div class="application__body">
+					<p class="application__text">Аби познайомитися ближче з нашим підходом та процесом роботи агентства
+						Wizart - замовте консультацію наших фахівців:</p>
+					<div class="application__items">
+						<input class="application__input" placeholder="Ім’я*" type="text"><input
+							class="application__input" placeholder="E-mail*" type="text"><input
+							class="application__input" placeholder="Телефон*" type="text"><input
+							class="application__input" placeholder="Повідомлення" type="text"><button
+							class="application__button">Відправити</button>
+
+					</div>
+
+				</div>
+		</section>
+		<section class="photo">
+			<div class="container">
+				<h2> ми допомагаємо стоматологічній галузі<br> України зростати і досягати нових звершень</h2>
+			</div>
+			<div class="photo-background">
+				<img src="./img/bigone.jpg" alt="">
+			</div>
+			<div class="photo-carousel">
+				<div class="photo-carousel__arrow-left">
+					<a href="#"><img src="./img/arrowleft.svg" alt=""></a>
+				</div>
+				<div class="container photo-carousel__middle">
+					<img src="./img/one.png" alt="">
+					<img src="./img/two.png" alt="">
+					<img src="./img/three.png" alt="">
+					<img src="./img/four.png" alt="">
+				</div>
+				<div class="photo-carousel__arrow-right">
+					<a href="#"><img src="./img/arrowrigth.svg" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<footer class="wizart">
+				<div class="container">
+					<div class="wizart__burger-img">
+						<img class="wizart__logo-burger" src="./img/wizart-logo.svg" alt="logo">
+						<img src="./img/social.svg" alt="social">
+					</div>
+					<div class="wizart__wrapper">
+						<div class="wizart__contacts-block">
+							<p class="wizart__info vanishing">Випити смачної кави разомз нами—завітайте у гості:</p>
+							<h3>Чернівці:</h3>
+							<p class="wizart__info">Пр. Незалежності, 96 | 612​info@wizart.agency</p>
+							<a class="wizart__telefhone" href=”tel:+380509643609”>tel.: <span>+38 050 964 36
+									09</span></a>
+							<div class="wizart__social">
+								<p class="viber">Viber</p>
+								<p class="telegram">Telegram</p>
+								<p class="whats-app">Whats-app</p>
+							</div>
+						</div>
+						<div class="wizart__contacts-block">
+							<p class="wizart__info vanishing">Помилуватися гарним видомна місто—чекаємо тут:</p>
+							<h3>Київ:</h3>
+							<p class="wizart__info">Ярославська, 58 | 2-01kyiv@wizart.agency</p>
+							<a class="wizart__telefhone" href=”tel:+380509643609”>tel.: <span>+38 050 964 36
+									09</span></a>
+							<div class="wizart__social">
+								<p class="viber">Viber</p>
+								<p class="telegram">Telegram</p>
+								<p class="whats-app">Whats-app</p>
+							</div>
+
+						</div>
+						<div class="wizart__contacts-block">
+							<img class="social-image" src="./img/social.svg" alt="social">
+							<p class="wizart__info">2017 © wizart.agency агентство креативних ідей</p>
+						</div>
+					</div>
+					<img class="wizart__logo" src="./img/wizart-logo.svg" alt="logo">
+				</div>
+			</footer>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+				crossorigin="anonymous"></script>
+
+
+	</main>
+
+</body>
+
+</html>
